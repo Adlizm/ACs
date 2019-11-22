@@ -1,0 +1,49 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>AC Incendios</title>
+    <style>
+        div{
+            display: flex;
+            align-content: space-between;
+            width: 400px;
+        }
+        input{
+            width: 100px;
+        }
+        label{
+            width: 300px;
+            margin: 5px 30px;
+        }
+        button{
+            width: 100px;
+            padding: 5px 10px;
+            margin: 5px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="rToBorning">Rate To Borning</label>
+        <input id="rToBorning" type="range" max="100" min="0" value="50">
+    </div>
+    <div>
+        <label for="rToBorning">Rate Borning To Ashes</label>
+        <input id="rBornToAshe" type="range" max="100" min="0" value="50">
+    </div>
+    <div>
+        <label for="statisticAC">AC with %</label>
+        <input id="statisticAC"type="checkbox">
+    </div>
+    <div>
+        <label for="eigth">Moore Neigthborhood</label>
+        <input id="eigth"type="checkbox">
+    </div>
+    <div>
+        <button id="start">Start</button>
+        <button id="nextState">Next State</button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
