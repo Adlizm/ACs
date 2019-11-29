@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>AC Incendios</title>
+    <style>
+        div{
+            display: flex;
+            align-content: space-between;
+            width: 400px;
+        }
+        input{
+            width: 100px;
+        }
+        label{
+            width: 300px;
+            margin: 5px 30px;
+        }
+        button{
+            width: 100px;
+            padding: 5px 10px;
+            margin: 5px 30px;
+        }
+        canvas{
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>% Urb</label>
+        <input type="range" max="100" min="0" value="1" id="pUrb">
+    </div>
+    <div>
+        <label>% Cres</label>
+        <input type="range" max="100" min="0" value="1" id="pCres">
+    </div>
+    <div>
+        <label>% Ins</label>
+        <input type="range" max="100" min="0" value="1" id="pIns">
+    </div>
+    <div>
+        <label>Erase Fire Time</label>
+        <input type="range" max="100" min="0" value="1" id="eraseTime">
+    </div>
+    <div>
+        <button id="start">Start</button>
+        <button id="next">Next State</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>
+
