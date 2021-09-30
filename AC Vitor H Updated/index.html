@@ -1,0 +1,44 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>AC Incendios</title>
+    <style>
+        div{
+            display: flex;
+            align-content: space-between;
+            width: 400px;
+        }
+        input{
+            width: 100px;
+        }
+        label{
+            width: 300px;
+            margin: 5px 30px;
+        }
+        button{
+            width: 100px;
+            padding: 5px 10px;
+            margin: 5px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="inputLQ">LQ</label>
+        <input id="inputLQ" type="number" min="1" value="1">
+    </div>
+    <div>
+        <label for="inputLR">LR</label>
+        <input id="inputLR" type="number" min="1" value="1">
+    </div>
+    <div>
+        <label for="inputNBurn">Number of Init Burn</label>
+        <input id="inputNBurn" type="number" min="1" value="1">
+    </div>
+    <div>
+        <button id="start">Start</button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
